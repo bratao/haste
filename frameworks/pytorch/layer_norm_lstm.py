@@ -16,7 +16,10 @@
 """Layer Normalized Long Short-Term Memory"""
 
 
-import haste_pytorch_lib as LIB
+try:
+    import haste_pytorch_lib as LIB
+except ImportError:
+    LIB = None
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
