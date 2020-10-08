@@ -14,7 +14,7 @@
 # ==============================================================================
 
 
-VERSION = '0.5.3'
+VERSION = '0.5.4'
 DESCRIPTION = 'Haste: a fast, simple, and open RNN library. Version that install without cuda'
 AUTHOR = 'LMNT, Inc.'
 AUTHOR_EMAIL = 'haste@lmnt.com'
@@ -87,7 +87,7 @@ if cuda_toolkit_available():
         extra_args = []
     else:
         CUDA_HOME = os.environ.get('CUDA_HOME', '/usr/local/cuda')
-        extra_args = ['-Wno-sign-compare']
+        extra_args = ['-Wno-sign-compare -g']
     extension = cpp_extension.CppExtension(
         'haste_pytorch_lib',
         sources=glob('frameworks/pytorch/*.cc'),
