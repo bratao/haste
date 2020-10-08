@@ -87,7 +87,7 @@ if cuda_toolkit_available():
         extra_args = []
     else:
         CUDA_HOME = os.environ.get('CUDA_HOME', '/usr/local/cuda')
-        extra_args = ['-Wno-sign-compare -g']
+        extra_args = ['-Wno-sign-compare', '-g']
     extension = cpp_extension.CppExtension(
         'haste_pytorch_lib',
         sources=glob('frameworks/pytorch/*.cc'),
