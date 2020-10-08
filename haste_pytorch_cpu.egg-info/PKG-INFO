@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: haste-pytorch-cpu
-Version: 0.5.4
+Version: 0.5.5
 Summary: Haste: a fast, simple, and open RNN library. Version that install without cuda
 Home-page: https://haste.lmnt.com
 Author: LMNT, Inc.
